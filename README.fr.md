@@ -15,6 +15,17 @@ La plateforme couvre les besoins opérationnels d'un événement sportif : inscr
 > **Code source privé.** Ce dépôt constitue une présentation technique du projet, de ses fonctionnalités, de son architecture et des problématiques rencontrées, sans exposer son code propriétaire.
 
 ---
+## Le projet en chiffres
+
+La plateforme accompagne l'organisation d'un tournoi de volleyball de grande envergure, avec :
+
+- **Plus de 550 équipes** à gérer.
+- **Environ 1 800 joueurs** inscrits.
+- **Des inscriptions complètes en moins d'une heure** après leur ouverture.
+
+Cette forte concentration des inscriptions sur une période très courte constitue un enjeu technique majeur. L'application doit gérer de nombreuses demandes simultanées tout en assurant la **fiabilité des inscriptions, la cohérence des données et le respect des capacités d'accueil**.
+
+Pour répondre à ces contraintes, elle intègre notamment une file d'attente, des transactions en base de données et des mécanismes de verrouillage pessimiste.
 
 ## Contexte et objectifs
 

@@ -16,9 +16,11 @@ The project is collaborative. The examples describe the application's architectu
 
 ### The Challenge
 
-Tournament registration openings can generate a significant number of simultaneous requests.
+The tournament brings together more than **550 teams, representing approximately 1,800 players**. Registration capacity is typically reached in less than one hour after registration opens, concentrating a significant volume of requests into a very short period.
 
-The system needs to manage access to the registration process while respecting registration capacity limits.
+This creates concurrency challenges and requires reliable registration processing, particularly to prevent available capacity from being exceeded.
+
+The application incorporates an access queue to regulate incoming traffic, along with database transactions and pessimistic locking mechanisms to protect critical registration and payment operations.
 
 ### Technical Approach
 

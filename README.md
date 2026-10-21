@@ -15,6 +15,17 @@ The platform handles the operational needs of a sports event, including particip
 > **Private source code.** This repository serves as a technical case study, showcasing the application's features, architecture, and engineering challenges without exposing its proprietary code.
 
 ---
+## Project at a Glance
+
+The platform supports the organization of a large-scale volleyball tournament, handling:
+
+- **More than 550 teams**.
+- **Approximately 1,800 players**.
+- **Registration capacity reached in under one hour** after registrations open.
+
+This concentrated registration demand creates a significant technical challenge. The application must handle a high volume of concurrent requests while maintaining **registration reliability, data consistency, and capacity constraints**.
+
+To address these requirements, the platform incorporates an access queue, database transactions, and pessimistic locking mechanisms.
 
 ## Project Background & Objectives
 
